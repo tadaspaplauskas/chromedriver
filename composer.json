@@ -13,5 +13,6 @@
         "psr-4": {
             "ChromeDriver\\": "src/"
         }
-    }
+    },
+    "version": "1.0.0"
 }
