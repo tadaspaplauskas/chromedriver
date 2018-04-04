@@ -16,6 +16,8 @@ class Environment
             $driver = 'chromedriver-linux';
         }
 
-        return putenv('webdriver.chrome.driver=' . realpath('../bin/' . $driver));
+        $fullPath = realpath(__DIR__ . '/../bin/' . $driver);
+
+        return putenv('webdriver.chrome.driver=' . $fullPath);
     }
 }
