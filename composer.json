@@ -17,7 +17,7 @@
     "bin": [
         "bin/chromedriver-mac"
         "bin/chromedriver-linux",
-        "bin/chromedriver-win"
+        "bin/chromedriver-win.exe"
     ],
     "version": "1.0.0"
 }
