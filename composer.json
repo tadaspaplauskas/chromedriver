@@ -8,5 +8,10 @@
             "name": "Tadas Paplauskas",
             "email": "tadas@paplauskas.lt"
         }
-    ]
+    ],
+    {
+        "autoload": {
+            "psr-4": {"ChromeDriver\\": "src/"}
+        }
+    }
 }
