@@ -15,7 +15,7 @@
         }
     },
     "bin": [
-        "bin/chromedriver-mac"
+        "bin/chromedriver-mac",
         "bin/chromedriver-linux",
         "bin/chromedriver-win.exe"
     ],
