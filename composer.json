@@ -9,9 +9,9 @@
             "email": "tadas@paplauskas.lt"
         }
     ],
-    {
-        "autoload": {
-            "psr-4": {"ChromeDriver\\": "src/"}
+    "autoload": {
+        "psr-4": {
+            "ChromeDriver\\": "src/"
         }
     }
 }
