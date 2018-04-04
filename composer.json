@@ -1,6 +1,6 @@
 {
-    "name": "tadaspaplauskas/chromedriver",
-    "description": "Adds the correct chromedriver executable based on the OS into the PHP runtime environment for use with facebook/webdriver",
+    "name": "tadaspaplauskas/chromedriver-standalone",
+    "description": "Makes it easy to use standalone chromedriver with facebook/webdriver",
     "type": "library",
     "license": "MIT",
     "authors": [
