@@ -14,5 +14,10 @@
             "ChromeDriver\\": "src/"
         }
     },
+    "bin": [
+        "bin/chromedriver-mac"
+        "bin/chromedriver-linux",
+        "bin/chromedriver-win"
+    ],
     "version": "1.0.0"
 }
