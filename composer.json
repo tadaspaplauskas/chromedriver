@@ -1,0 +1,13 @@
+{
+    "name": "tadaspaplauskas/chromedriver",
+    "description": "AAdds the correct chromedriver executable based on the OS into the PHP runtime environment.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tadas Paplauskas",
+            "email": "tadas@paplauskas.lt"
+        }
+    ],
+    "require": {}
+}
