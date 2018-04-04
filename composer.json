@@ -1,6 +1,6 @@
 {
     "name": "tadaspaplauskas/chromedriver",
-    "description": "AAdds the correct chromedriver executable based on the OS into the PHP runtime environment.",
+    "description": "Adds the correct chromedriver executable based on the OS into the PHP runtime environment for use with facebook/webdriver",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -8,6 +8,5 @@
             "name": "Tadas Paplauskas",
             "email": "tadas@paplauskas.lt"
         }
-    ],
-    "require": {}
+    ]
 }
