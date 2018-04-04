@@ -6,18 +6,39 @@ class Environment
 {
     public static function setup()
     {
+        return putenv('webdriver.chrome.driver=' . self::getPath());
+    }
+
+    public static function getPath()
+    {
         if (PHP_OS === 'WINNT' || strpos(php_uname(), 'Microsoft') !== false) {
-            $driver = 'chromedriver-win.exe';
+            return self::getWinPath();
         }
         else if (PHP_OS === 'Darwin') {
-            $driver = 'chromedriver-mac';
+            return self::getMacPath();
         }
         else {
-            $driver = 'chromedriver-linux';
+            return self::getLinuxPath();
         }
+    }
 
-        $fullPath = realpath(__DIR__ . '/../bin/' . $driver);
+    public static function getWinPath()
+    {
+        return self::getBinPath('chromedriver-win.exe');
+    }
 
-        return putenv('webdriver.chrome.driver=' . $fullPath);
+    public static function getMacPath()
+    {
+        return self::getBinPath('chromedriver-mac');
+    }
+
+    public static function getLinuxPath()
+    {
+        return self::getBinPath('chromedriver-linux');
+    }
+
+    private static function getBinPath($driver)
+    {
+        return realpath(__DIR__ . '/../bin/' . $driver);
     }
 }
