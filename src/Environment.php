@@ -1,10 +1,10 @@
 <?php
 
-namespace ChromeDriver;
+namespace ChromeDriverStandalone;
 
 class Environment
 {
-    public static function set()
+    public static function setup()
     {
         if (PHP_OS === 'WINNT' || strpos(php_uname(), 'Microsoft') !== false) {
             $driver = 'chromedriver-win.exe';
